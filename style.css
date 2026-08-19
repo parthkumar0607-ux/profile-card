@@ -4,13 +4,14 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.826);
-    background: linear-gradient(to bottom right, rgba(1, 1, 60, 0.922), black);
+    background: linear-gradient(to bottom right, rgba(225, 233, 8, 0.922), black);
     
 }
 
 .profilecard{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.057), rgba(0, 0, 0, 0.611)), url(download\ \(2\).jpg);
     position: relative;
-    background: linear-gradient(to top left, rgba(40, 3, 174, 0.987), rgb(0, 0, 0));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,9 +20,8 @@ body{
     max-width: 400px;
     min-width: 400px;
     height: 900px;
-    border: inset 8px rgba(10, 8, 8, 0.46);
+    border: solid 8px rgb(0, 0, 0);
     padding: 70px;
-    background-color: rgb(32, 30, 107);
     border-radius: 100px;
     box-shadow: -10px 10px 10px;
     margin: 10%;
@@ -37,12 +37,12 @@ body{
     height: 100px;
     border-radius: 50%;
     transition: 400ms;
-    transform: translateY(-70px);
+    transform: translateY(-70px) scale(1.7);
 
 }
 
 .profilecard img:hover{
-    transform: translateY(-70px) scale(1.7);
+    transform: translateY(-70px) scale(2);
 }
 
 .profilecard h1{
@@ -53,9 +53,10 @@ body{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 40px;
     margin: 10px;
-    color: rgb(135, 189, 234);
-    text-shadow: 2px 2px 2px rgb(0, 0, 0) ;
+    color: rgb(184, 215, 28);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0) ;
 }
 .profilecard p{
     text-align: center;
@@ -63,7 +64,7 @@ body{
   font-weight: 400;
   font-style: normal;
   margin: 10px;
-  color: azure;
+  color: rgb(5, 5, 5);
 
 }
 
@@ -76,7 +77,7 @@ body{
 }
 
 .skills p{
-    background-color: rgba(220, 226, 219, 0.273);
+    background-color: rgba(4, 4, 4, 0.273);
     border-radius: 10px;
     padding: 5px;
     transition: 400ms;
@@ -91,7 +92,7 @@ body{
 
 .skills h2{
     text-align: center;
-    color: rgb(136, 149, 197);
+    color: rgb(2, 2, 2);
     text-shadow: 3px 3px 3px black;
     margin-bottom: 3px;
     margin-top: 30px;
@@ -112,7 +113,7 @@ body{
     padding: 10px;
     box-shadow: -3px 3px 3px black;
     cursor: pointer;
-    color: aliceblue;
+    color: rgb(2, 2, 2);
     text-decoration: none white;
     transition: 300ms;
     background: linear-gradient(to bottom right, rgba(27, 12, 77, 0.103), rgba(255, 255, 255, 0.317));
@@ -134,7 +135,7 @@ body{
 }
 
 .learning p{
-    background-color: rgba(240, 248, 255, 0.141);
+    background-color: rgba(3, 3, 3, 0.141);
     padding: 3%;
     border-radius: 10px;
     transition: 400ms;
@@ -150,7 +151,7 @@ body{
 
 .learning h2{
     text-align: center;
-    color: rgb(136, 149, 197);
+    color: rgb(1, 1, 1);
     text-shadow: 3px 3px 3px black;
     margin-bottom: 2px;
     border-bottom: groove ;
@@ -159,7 +160,7 @@ body{
 
 .links h2{
     text-align: center;
-    color: rgb(136, 149, 197);
+    color: rgb(0, 0, 0);
     text-shadow: 3px 3px 3px black;
     margin-bottom: 2px;
     border-bottom: groove ;
@@ -168,19 +169,19 @@ body{
 
 .status {
     border-bottom: solid rgba(0, 0, 0, 0.536);
-    transform: translateY(-100px);
+    transform: translateY(-100px) translateX(-50px);
     align-self: flex-start;
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 8px;
-    background-color: rgba(240, 248, 255, 0.09);
+    background-color: rgba(6, 8, 10, 0.265);
     border-radius: 50px;
     margin-bottom: 50px;
 }
 
 .status p{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .symbol{
@@ -209,7 +210,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(240, 248, 255, 0.557);
+    background-color: rgb(247, 251, 255);
     border-radius: 50px;
     width: 170px;
     height: 5px;
