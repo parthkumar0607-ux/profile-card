@@ -3,7 +3,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.826);
+    background-color: rgba(0, 0, 0, 0.849);
     background: linear-gradient(to bottom right, rgba(225, 233, 8, 0.922), black);
     
 }
@@ -11,7 +11,7 @@ body{
 .profilecard{
     
     animation: phoneEnter 1s ease-out;
-    background: linear-gradient(rgba(0, 0, 0, 0.057), rgba(0, 0, 0, 0.611)), url(download\ \(2\).jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, 0.55)), url(download\ \(2\).jpg);
     position: relative;
     display: flex;
     align-items: center;
@@ -119,7 +119,12 @@ body{
 .description1{
     display: none;
     position: absolute;
-    transform: translateY(-50px) translateX(-100px);
+    transform: translateY(-60px) translateX(-100px);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.447), rgba(0, 0, 0, 0.452));
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 30px;
 }
 
 .p1:hover + .description1{
@@ -259,9 +264,8 @@ body{
     background-color: black;
     width: 170px;
     height: 50px;
-    transform: translateY(-93px);
+    transform: translateY(-103px);
     border-radius: 50px;
-
 }
 
 .nav{
@@ -272,7 +276,7 @@ body{
     border-radius: 50px;
     width: 170px;
     height: 5px;
-    transform: translateY(100px);
+    transform: translateY(105px);
     transition: 400ms;
 }
 
