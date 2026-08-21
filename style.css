@@ -40,13 +40,16 @@ body{
     border-radius: 50%;
     transition: 400ms;
     transform: translateY(-70px) scale(1.7);
+    position: relative;
 
 }
+
 
 .profilecard img:hover{
     transform: translateY(-70px) scale(2);
     cursor: pointer;
 }
+
 
 .profilecard h1{
     border-bottom: groove;
@@ -91,15 +94,16 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
-.skills p{
+.skills .p1, .skills .p2, .skills .p3, .skills .p4{
     animation: skillsEnter 1s ease-in 2.8s both;
     background-color: rgba(4, 4, 4, 0.273);
     border-radius: 10px;
     padding: 6px;
     transition: 400ms;
-    border: solid rgba(0, 0, 0, 0.166);
+    border: none rgba(0, 0, 0, 0.166);
     box-shadow: -0px 0px 5px black;
     background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.411), rgba(255, 255, 255, 0.278));
     backdrop-filter: blur(3px);
@@ -110,6 +114,17 @@ body{
     transform: translateY(-5px);
     color: rgb(9, 111, 158);
     cursor: pointer;
+}
+
+.description1{
+    display: none;
+    position: absolute;
+    transform: translateY(-50px) translateX(-100px);
+}
+
+.p1:hover + .description1{
+    display: block;
+    z-index: 100px;
 }
 
 .skills h2{
@@ -166,7 +181,7 @@ body{
     padding: 3%;
     border-radius: 10px;
     transition: 400ms;
-    border: solid rgba(0, 0, 0, 0.166);
+    border: none rgba(0, 0, 0, 0.166);
     box-shadow: -0px 0px 5px black;
     background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.411), rgba(255, 255, 255, 0.278));
     backdrop-filter: blur(3px);
@@ -273,8 +288,6 @@ body{
     transform: scale(1.4);
     cursor: pointer;
 }
-
-
 
 @keyframes phoneEnter {
     from{
